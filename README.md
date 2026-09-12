@@ -519,8 +519,6 @@ local function getEggLogEntries()
                 end
             end
         end
-                    end
-        end
     end
     table.sort(entries, function(a,b)
         if a.rarityOrder ~= b.rarityOrder then return a.rarityOrder > b.rarityOrder end
@@ -1056,7 +1054,7 @@ TeleguiadoBtn.MouseButton1Click:Connect(function()
 end)
 
 -- ===== MISC TAB =====
-local VoltaBtn =local VoltaBtn = mkBtn(MiscContent, "VoltaBtn", "🔄 Modo Volta", 15)
+local VoltaBtn = mkBtn(MiscContent, "VoltaBtn", "🔄 Modo Volta", 15)
 local ModeBtn = mkBtn(MiscContent, "ModeBtn", "🚶 Modo: Walk", 63)
 local WebhookToggle = mkBtn(MiscContent, "WebhookToggle", "🌐 Webhook: OFF", 111)
 
